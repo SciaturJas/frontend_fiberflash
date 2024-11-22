@@ -1,0 +1,109 @@
+<!-- page title bar -->
+<div class="container-fluid">
+    <div class="row align-items-center page-title">
+        <div class="col-12 col-md mb-2 mb-sm-0">
+            <h5 class="mb-0">Wizards</h5>
+            <p class="text-secondary">Step by step follow the instruction and get details without fail.</p>
+        </div>
+        <div class="col col-sm-auto">
+        </div>
+        <div class="col-auto ps-0 position-relative">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <!-- wizard-->
+    <h5 class="title">ng-Wizard - Arrow</h5>
+    <ng-wizard [config]="config" (stepChanged)="stepChanged($event)" class="mb-4 d-block">
+        <ng-wizard-step [title]="'1'" [description]="'Step one'" [canEnter]="isValidTypeBoolean" [canExit]="isValidFunctionReturnsBoolean.bind(this)">
+            <span>Step one</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'2'" [description]="'Step two'" [state]="stepStates.disabled">
+            <span>Step two</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'3'" [description]="'Step three'" [canEnter]="isValidFunctionReturnsObservable.bind(this)" [canExit]="isValidFunctionReturnsBoolean.bind(this)">
+            <span>Step three</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'4'" [description]="'Step four'">
+            <span>Step four</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'5'" [description]="'Step five'" [state]="stepStates.hidden">
+            <span>Step five</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'6'" [description]="'Step six'" [state]="stepStates.error">
+            <span>Step six</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'7'" [description]="'Step seven'">
+            <span>Step seven</span>
+        </ng-wizard-step>
+    </ng-wizard>
+
+
+    <h5 class="title">ng-Wizard - Circle</h5>
+    <ng-wizard [config]="config2" (stepChanged)="stepChanged($event)" class="mb-4 d-block">
+        <ng-wizard-step [title]="'1'" [description]="'Step one'" [canEnter]="isValidTypeBoolean" [canExit]="isValidFunctionReturnsBoolean.bind(this)">
+            <span>Step one</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'2'" [description]="'Step two'" [state]="stepStates.disabled">
+            <span>Step two</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'3'" [description]="'Step three'" [canEnter]="isValidFunctionReturnsObservable.bind(this)" [canExit]="isValidFunctionReturnsBoolean.bind(this)">
+            <span>Step three</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'4'" [description]="'Step four'">
+            <span>Step four</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'5'" [description]="'Step five'" [state]="stepStates.hidden">
+            <span>Step five</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'6'" [description]="'Step six'" [state]="stepStates.error">
+            <span>Step six</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'7'" [description]="'Step seven'">
+            <span>Step seven</span>
+        </ng-wizard-step>
+    </ng-wizard>
+
+    <h5 class="title">ng-Wizard - Dots</h5>
+    <ng-wizard [config]="config3" (stepChanged)="stepChanged($event)" class="mb-4 d-block">
+        <ng-wizard-step [title]="'1'" [description]="'Step one'" [canEnter]="isValidTypeBoolean" [canExit]="isValidFunctionReturnsBoolean.bind(this)">
+            <span>Step one</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'2'" [description]="'Step two'" [state]="stepStates.disabled">
+            <span>Step two</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'3'" [description]="'Step three'" [canEnter]="isValidFunctionReturnsObservable.bind(this)" [canExit]="isValidFunctionReturnsBoolean.bind(this)">
+            <span>Step three</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'4'" [description]="'Step four'">
+            <span>Step four</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'5'" [description]="'Step five'" [state]="stepStates.hidden">
+            <span>Step five</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'6'" [description]="'Step six'" [state]="stepStates.error">
+            <span>Step six</span>
+        </ng-wizard-step>
+
+        <ng-wizard-step [title]="'7'" [description]="'Step seven'">
+            <span>Step seven</span>
+        </ng-wizard-step>
+    </ng-wizard>
+</div>

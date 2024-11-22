@@ -1,0 +1,84 @@
+<div class="dropdown d-inline-block">
+    <a class="btn btn-link btn-square text-secondary dd-arrow-none dropdown-toggle" role="button" id="filterintitle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+        <i class="bi bi-filter"></i>
+    </a>
+
+    <div class="dropdown-menu w-300" aria-labelledby="filterintitle">
+        <div class="dropdown-item">
+            <div class="input-group input-group-md border rounded">
+                <span class="input-group-text text-theme"><i class="bi bi-box"></i></span>
+                <select class="form-control" id="titltfilterlist" multiple chosen>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="New York">New York</option>
+                    <option value="London">London</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="India" selected>India</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="India">India</option>
+                </select>
+            </div>
+            <div class="invalid-feedback">You have already selected maximum option allowed. (This is Configurable)</div>
+        </div>
+
+        <div class="dropdown-item">
+            <h6 class="mb-0">Orders:</h6>
+            <p class="text-secondary small">1256 orders last week</p>
+        </div>
+
+        <ul class="list-group list-group-flush bg-none mb-2">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">Online Orders</div>
+                    <div class="col-auto">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="titleswitch1">
+                            <label class="form-check-label" for="titleswitch1"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">Offline Orders</div>
+                    <div class="col-auto">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="titleswitch2" checked="">
+                            <label class="form-check-label" for="titleswitch2"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="dropdown-item">
+            <div class="row">
+                <div class="col"><button class="btn btn-outline-secondary border ddclose">cancel</button></div>
+                <div class="col-auto">
+                    <button class="btn btn-theme">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<a routerLink="/pages/other/helpcenter" class="btn btn-link btn-square text-secondary" data-bs-container="app-titlebar" data-bs-trigger="hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Support" id="stylise">
+    <i class="bi bi-life-preserver"></i>
+</a>
+
+<a routerLink="/pages/other/personalize" class="btn btn-link btn-square text-secondary" data-bs-container="app-titlebar" data-bs-trigger="hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Personalize">
+    <i class="bi bi-palette"></i>
+</a>
+
+<a href="bunowlink.html" target="_blank" class="btn btn-link btn-square text-secondary" data-bs-container="app-titlebar" data-bs-trigger="hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Buy this">
+    <span class="bi bi-basket position-relative">
+        <span class="position-absolute top-0 start-100 p-1 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+        </span>
+    </span>
+</a>

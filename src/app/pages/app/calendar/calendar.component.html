@@ -1,0 +1,305 @@
+<!-- page title bar -->
+<div class="container-fluid">
+    <div class="row align-items-center page-title">
+        <div class="col-12 col-md mb-2 mb-sm-0">
+            <h5 class="mb-0">Calendar Appointments</h5>
+            <p class="text-secondary">Book Appointments</p>
+        </div>
+        <div class="col col-sm-auto">
+        </div>
+        <div class="col-auto ps-0 position-relative">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid border-bottom">
+    <ul class="nav nav-iconbar py-2">
+        <li class="nav-item">
+            <button class="btn btn-link border-0 innersidebar-btn" (click)="innermenuopen()"><i class="bi bi-layout-sidebar h5 vm"></i></button>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+            <a class="nav-link"><i class="bi bi-arrow-clockwise h5 vm"></i></a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+            <div class="input-group input-group-md w-100">
+                <input type="text" class="form-control" placeholder="Search mail... " value="">
+                <div class="input-group-text rounded px-0">
+                    <button class="btn btn-sm btn-link" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item  ms-auto">
+            <a class="nav-link"><i class="bi bi-question-circle"></i></a>
+        </li>
+    </ul>
+</div>
+<div class="inner-sidebar-wrap border-bottom">
+    <div class="inner-sidebar">
+        <div class="row mx-0 my-3">
+            <div class="col d-grid">
+                <button class="btn btn-theme border" type="button" data-bs-toggle="modal" data-bs-target="#createappointment"><i class="bi bi-envelope-plus me-2 vm"></i> Create Appointment</button>
+            </div>
+        </div>
+        <ul class="nav nav-pills mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page">
+                    <div class="avatar avatar-40 icon"><i class="bi bi-calendar-week"></i></div>
+                    <div class="col">Calendar</div>
+                    <div class="col-auto align-self-center">
+                        <figure class="avatar avatar-24 coverimg rounded-circle">
+                            <img src="assets/img/user-2.jpg" alt="">
+                        </figure>
+                        <figure class="avatar avatar-24 bg-light-theme rounded-circle">
+                            <small class="fs-10 vm">+2</small>
+                        </figure>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="false" data-bs-display="static" role="button" aria-expanded="false">
+                    <div class="avatar avatar-40 icon"><i class="bi bi-calendar-event"></i></div>
+                    <div class="col">Categories</div>
+                    <div class="arrow"><i class="bi bi-chevron-down plus"></i> <i class="bi bi-chevron-up minus"></i>
+                    </div>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item nav-link">
+                            <div class="avatar avatar-40 icon"><i class="bi bi-gear"></i>
+                            </div>
+                            <div class="col align-self-center">Work</div>
+                            <div class="col-auto align-items-center">
+                                <figure class="avatar avatar-24 bg-light-theme rounded-circle">
+                                    <small class="fs-10 vm">+5</small>
+                                </figure>
+                            </div>
+                            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item nav-link">
+                            <div class="avatar avatar-40 icon"><i class="bi bi-people"></i>
+                            </div>
+                            <div class="col align-self-center">Visit</div>
+                            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item nav-link">
+                            <div class="avatar avatar-40 icon"><i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="col align-self-center">Calls</div>
+                            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item nav-link">
+                            <div class="avatar avatar-40 icon"><i class="bi bi-alarm"></i>
+                            </div>
+                            <div class="col align-self-center">Reminders</div>
+                            <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page">
+                    <div class="avatar avatar-40 icon"><i class="bi bi-star"></i></div>
+                    <div class="col">Favorite</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page">
+                    <div class="avatar avatar-40 icon"><i class="bi bi-save"></i></div>
+                    <div class="col">Draft</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page">
+                    <div class="avatar avatar-40 icon"><i class="bi bi-trash"></i></div>
+                    <div class="col">Deleted</div>
+                    <div class="col-auto">
+
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="row mx-0 mb-4">
+            <div class="col d-grid">
+                <button class="btn btn-outline-secondary border" type="button"><i class="bi bi-camera-video me-2"></i> Meet</button>
+            </div>
+            <div class="col d-grid">
+                <button class="btn btn-outline-secondary border" type="button"><i class="bi bi-chat-right-text me-2"></i> Chat</button>
+            </div>
+        </div>
+        <div class="card shadow-none bg-none border-0">
+            <div class="input-group input-group-md">
+                <span class="input-group-text text-theme"><i class="bi bi-person-plus"></i></span>
+                <input type="text" class="form-control" placeholder="Start Chating... " value="">
+                <div class="dropdown input-group-text rounded px-0">
+                    <button class="btn btn-sm btn-link dd-arrow-none" type="button" id="statuschat" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="statuschat">
+                        <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-success rounded-circle d-inline-block p-1"></span> Online</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-warning rounded-circle d-inline-block p-1"></span> Away</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-danger rounded-circle d-inline-block p-1"></span> Offline</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-secondary rounded-circle d-inline-block p-1"></span> Disabled</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body mh-300 overflow-y-auto p-0">
+                <ul class="list-group list-group-flush bg-none rounded-0 border-top">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 coverimg rounded-circle">
+                                    <img src="assets/img/user-2.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Angelina Devid</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check"></i> 2:00 am</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 rounded-circle bg-theme">
+                                    <span class="h6 vm">JM</span>
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Mr. Jack Mario</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all"></i> 2:00 am</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 coverimg rounded-circle">
+                                    <img src="assets/img/user-4.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Roberto Carlos</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all text-info"></i> 2:00 am</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 coverimg rounded-circle">
+                                    <img src="assets/img/user-1.jpg" alt="" name="userimage" />
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">The Maxartkiller</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all text-success"></i> 2 d</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 rounded-circle bg-warning text-white">
+                                    <span class="h6 vm">JC</span>
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Ms. Jully CTO</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all"></i> 4 d</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item disabled" data-bs-toggle="modal" data-bs-target="#chatmodalwindow">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 rounded-circle bg-success text-white">
+                                    <span class="h6 vm">JC</span>
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Aswatthma D-Plan</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check"></i> 1 m</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 coverimg rounded-circle bg-theme">
+                                    <img src="assets/img/favicon72.png" alt="" />
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">getWinDOORS Support</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check"></i> 2:00 am</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 rounded-circle bg-theme">
+                                    <span class="h6 vm">JM</span>
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Mr. Jack Mario</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all"></i> 2:00 am</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 coverimg rounded-circle">
+                                    <img src="assets/img/user-4.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Roberto Carlos</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all text-info"></i> 2:00 am</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 coverimg rounded-circle">
+                                    <img src="assets/img/user-1.jpg" alt="" name="userimage" />
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">The Maxartkiller</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all text-success"></i> 2 days ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <figure class="avatar avatar-36 rounded-circle bg-warning text-white">
+                                    <span class="h6 vm">JC</span>
+                                </figure>
+                            </div>
+                            <div class="col-9 align-self-center ps-0">
+                                <p class="text-truncate mb-0">Ms. Jully CTO</p>
+                                <p class="text-secondary small text-truncate"><i class="bi bi-check-all"></i> 4 days ago</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="inner-sidebar-content">
+        <full-calendar [options]="calendarOptions"></full-calendar>
+    </div>
+</div>

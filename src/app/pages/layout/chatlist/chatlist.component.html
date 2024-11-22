@@ -1,0 +1,229 @@
+<div class="card border-0 h-100">
+    <div class="input-group input-group-md">
+        <span class="input-group-text text-theme"><i class="bi bi-person-plus"></i></span>
+        <input type="text" class="form-control" placeholder="Start searching... " value="" />
+        <div class="dropdown input-group-text rounded px-0">
+            <button class="btn btn-sm btn-link dd-arrow-none" type="button" id="statuschat" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="statuschat">
+                <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-success rounded-circle d-inline-block p-1"></span> Online</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-warning rounded-circle d-inline-block p-1"></span> Away</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-danger rounded-circle d-inline-block p-1"></span> Offline</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)"><span class="vm me-1 bg-secondary rounded-circle d-inline-block p-1"></span> Disabled</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-header">
+        <div class="row">
+            <div class="col d-grid">
+                <button class="btn btn-outline-secondary border" type="button"><i class="bi bi-camera-video me-2"></i> Meet</button>
+            </div>
+            <div class="col d-grid">
+                <button class="btn btn-outline-secondary border" type="button"><i class="bi bi-chat-right-text me-2"></i> Chat</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body h-100 overflow-y-auto p-0">
+        <ul class="list-group list-group-flush bg-none rounded-0 ">
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 coverimg rounded-circle">
+                            <img src="assets/img/user-2.jpg" alt="" />
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Angelina Devid</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check"></i> 2:00 am</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 rounded-circle bg-theme">
+                            <span class="h6 vm">JM</span>
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Mr. Jack Mario</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all"></i> 2:00 am</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 coverimg rounded-circle">
+                            <img src="assets/img/user-4.jpg" alt="" />
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Roberto Carlos</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all text-info"></i> 2:00 am</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 coverimg rounded-circle">
+                            <img src="assets/img/user-1.jpg" alt="" name="userimage" />
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">The Maxartkiller</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all text-success"></i> 2 days ago</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 rounded-circle bg-warning text-white">
+                            <span class="h6 vm">JC</span>
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Ms. Jully CTO</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all"></i> 4 days ago</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item disabled" data-bs-toggle="modal" data-bs-target="#chatmodalwindow" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 rounded-circle bg-success text-white">
+                            <span class="h6 vm">JC</span>
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Aswatthma D-Plan</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check"></i> 1 mo ago</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 coverimg rounded-circle bg-theme">
+                            <img src="assets/img/favicon72.png" alt="" />
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">getWinDOORS Support</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check"></i> 2:00 am</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Thank you for connecting</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 rounded-circle bg-theme">
+                            <span class="h6 vm">JM</span>
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Mr. Jack Mario</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all"></i> 2:00 am</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 coverimg rounded-circle">
+                            <img src="assets/img/user-4.jpg" alt="" />
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Roberto Carlos</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all text-info"></i> 2:00 am</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 coverimg rounded-circle">
+                            <img src="assets/img/user-1.jpg" alt="" name="userimage" />
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">The Maxartkiller</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all text-success"></i> 2 days ago</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item" (click)="openChat()">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-44 rounded-circle bg-warning text-white">
+                            <span class="h6 vm">JC</span>
+                        </figure>
+                    </div>
+                    <div class="col-9 align-self-center ps-0">
+                        <div class="row g-0">
+                            <div class="col-8">
+                                <p class="text-truncate mb-0">Ms. Jully CTO</p>
+                            </div>
+                            <div class="col-4 text-end"><small class="text-muted fs-10 mb-1"><i class="bi bi-check-all"></i> 4 days ago</small></div>
+                        </div>
+                        <p class="text-secondary small text-truncate">Spread love and spread this template</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

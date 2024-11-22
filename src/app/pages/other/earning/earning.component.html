@@ -1,0 +1,147 @@
+<!-- page title bar -->
+<div class="container-fluid mb-4">
+    <div class="row align-items-center page-title">
+        <div class="col-12 col-md mb-2 mb-sm-0">
+            <h5 class="mb-0">Your Earning</h5>
+            <p class="text-secondary">Calculated overall earning view with reports</p>
+        </div>
+        <div class="col col-sm-auto">
+        </div>
+        <div class="col-auto ps-0 position-relative">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-gradient-theme-light theme-green text-center mb-4">
+                <div class="card-body py-4">
+                    <h3>1254.00 <small>USD</small></h3>
+                    <h5>30 Days Earning</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="text-secondary">Sales earnings this month.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-gradient-theme-light theme-yellow text-center mb-4">
+                <div class="card-body py-4">
+                    <h3>869.00 <small>USD</small></h3>
+                    <h5>Current Balance</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="text-secondary">28 June 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-gradient-theme-light text-center mb-4">
+                <div class="card-body py-4">
+                    <h3>82820.00 <small>USD</small></h3>
+                    <h5>Total Earning</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="text-secondary">Total value of your sales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card border-0 mb-4">
+        <div class="card-body">
+            <div class="row mb-4 py-2">
+                <div class="col text-center">
+                    <h4>Your best <span class="text-gradient">performance created</span> big impact</h4>
+                    <p class="text-secondary">You are awesome and you did a great things which people loves a lot.</p>
+                </div>
+            </div>
+            <div>
+                <canvas class="chartserver" #chartareasocial baseChart [datasets]="chartareasocialData" [colors]="chartareasocialColors" [labels]="chartareasocialLabels" [options]="chartareasocialOptions" [plugins]="chartareasocialPlugins" [legend]="chartareasocialLegend" [chartType]="chartareasocialType" id="chartareasocial">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 mb-4">
+        <div class="card-header">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <i class="bi bi-globe h5 avatar avatar-40 bg-light-theme rounded"></i>
+                </div>
+                <div class="col">
+                    <h6 class="fw-medium mb-0">Sales Overview</h6>
+                    <p class="text-secondary small">Customer around the <b>Earth</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-8">
+                    <div id="world-map" class="h-100 w-100"></div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div>
+                        <canvas class="chartserver" #areachart baseChart [datasets]="areaChartData" [colors]="areaChartColors" [labels]="areaChartLabels" [options]="areaChartOptions" [plugins]="areaChartPlugins" [legend]="areaChartLegend" [chartType]="areaChartType" id="areachart">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card border-0 mb-4 overflow-hidden">
+        <div class="card-body p-0">
+            <table class="table table-striped mb-0">
+                <thead class="bg-theme">
+                    <tr>
+                        <th>Date</th>
+                        <th>Item Sales Count</th>
+                        <th>Earnings</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><a>Monday, 2</a></td>
+                        <td>1</td>
+                        <td>$20.99</td>
+                    </tr>
+                    <tr>
+                        <td><a>Tuesday, 3</a></td>
+                        <td>2</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td><a>Tuesday, 10</a></td>
+                        <td>2</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td><a>Wednesday, 11</a></td>
+                        <td>2</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td><a>Thursday, 12</a></td>
+                        <td>1</td>
+                        <td>$17.50</td>
+                    </tr>
+                    <tr>
+                        <td><a>Friday, 13</a></td>
+                        <td>1</td>
+                        <td>$17.50</td>
+                    </tr>
+                </tbody>
+
+                <tfoot class="bg-light-theme">
+                    <tr>
+                        <td class="border-0">Total</td>
+                        <td class="border-0">9</td>
+                        <td class="border-0">$160.99</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

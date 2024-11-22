@@ -1,0 +1,665 @@
+<!-- page title bar -->
+<div class="container-fluid">
+    <div class="row align-items-center page-title">
+        <div class="col-12 col-md mb-2 mb-sm-0">
+            <h5 class="mb-0">Forms</h5>
+            <p class="text-secondary">Take input with right component</p>
+        </div>
+        <div class="col col-sm-auto">
+        </div>
+        <div class="col-auto ps-0 position-relative">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- forms -->
+    <h5 class="title">Forms</h5>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-4 mb-4 mb-md-0 was-validated">
+            <!-- was-validated class on form when data are submitted -->
+            <div>
+                <div class="form-group mb-3 position-relative check-valid is-valid">
+                    <!-- is-valid or is-invalid class can be toggled when user focus out and validation checked. on page reload also used.-->
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-envelope"></i></span>
+                        <div class="form-floating">
+                            <input type="email" placeholder="Email Address" value="guest@maxartkiller.com" required class="form-control border-start-0">
+                            <label>Email Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add .com at last to insert valid data </div>
+            </div>
+            <div class="mb-4">
+                <div class="form-group mb-3 position-relative check-valid is-invalid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-key"></i></span>
+                        <div class="form-floating">
+                            <input type="password" placeholder="Enter Password" value="" required class="form-control border-start-0">
+                            <label>Password</label>
+                        </div>
+                        <span class="input-group-text text-secondary bg-white border-end-0" id="viewpassword2"><i class="bi bi-eye"></i></span>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Please enter valid input</div>
+            </div>
+            <div class="form-check form-switch mb-4">
+                <input class="form-check-input" type="checkbox" role="switch" id="rememeberme">
+                <label class="form-check-label" for="rememeberme">Remember me</label>
+            </div>
+            <button class="btn btn-theme">Sign in</button>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4 mb-md-0">
+            <!-- Form elements -->
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid  is-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-geo-alt"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Enter Country" value="United States" required class="form-control border-start-0" autofocus>
+                            <label>Country</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback">Add valid country </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-envelope"></i></span>
+                        <div class="form-floating">
+                            <input type="email" placeholder="Email Address" value="guest@maxartkiller.com" required class="form-control border-start-0">
+                            <label>Email Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add .com at last to insert valid data </div>
+            </div>
+            <div>
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-key"></i></span>
+                        <div class="form-floating">
+                            <input type="password" placeholder="Enter Password" value="" required class="form-control border-start-0" id="password1">
+                            <label>Password</label>
+                        </div>
+                        <span class="input-group-text text-secondary bg-white border-end-0" id="viewpassword"><i class="bi bi-eye"></i></span>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Please enter valid input</div>
+                <div class="feedback mb-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="check-strength" id="checksterngthdisplay">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <span class="small" id="textpassword"></span>
+                            <i class="bi bi-info-circle text-theme ms-1" data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Password should contain atleast 1 capital, 1 alphanumeric & min. 8 characters"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-key"></i></span>
+                        <div class="form-floating">
+                            <input type="password" placeholder="Re-enter Password" value="" required class="form-control border-start-0" id="password2">
+                            <label>Confirm Password</label>
+                        </div>
+                        <span class="input-group-text text-secondary bg-white border-end-0"><i class="bi bi-eye"></i></span>
+                    </div>
+                </div>
+                <div class="invalid-feedback">Please enter valid input</div>
+                <div class="valid-feedback">Woooh! Entered password matched </div>
+            </div>
+            <div class="row  mb-4">
+                <div class="col-auto">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="terms">
+                        <label class="form-check-label" for="terms"></label>
+                    </div>
+                </div>
+                <div class="col">I have read <a>Terms and Conditions</a></div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-4 mb-md-0">
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Card Holder Name" value="Max Johnson" required class="form-control border-start-0">
+                            <label>Card Holder Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div>
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-credit-card"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Card Number" value="" required class="form-control border-start-0">
+                            <label>Card Number</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Please enter valid input</div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <div class="mb-2">
+                        <div class="form-group mb-2 position-relative check-valid is-invalid">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-calendar-event"></i></span>
+                                <div class="form-floating">
+                                    <input type="number" placeholder="Expiry Date" value="" required class="form-control border-start-0">
+                                    <label>Expiry Date</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback mb-3">Please enter valid input</div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="mb-4">
+                        <div class="form-group mb-2 position-relative check-valid">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-asterisk"></i></span>
+                                <div class="form-floating">
+                                    <input type="number" placeholder="CVV" value="" required class="form-control border-start-0">
+                                    <label>CVV</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback mb-3">Please enter valid input</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check form-switch mb-4">
+                <input class="form-check-input" type="checkbox" role="switch" id="savecard">
+                <label class="form-check-label" for="savecard">Save My Card</label>
+            </div>
+            <button class="btn btn-theme">Checkout</button>
+        </div>
+    </div>
+
+    <!--checkout forms -->
+    <h5 class="title">Checkout Form</h5>
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-7 col-xl-8 mb-4">
+            <h6 class="title">Basic Information</h6>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <input type="text" placeholder="First Name" value="Max" required class="form-control border-start-0">
+                                <label>First Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <input type="text" placeholder="Last Name" value="Johnson" required class="form-control border-start-0">
+                                <label for="">last Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-envelope"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Email address" value="testst@emailtest.com" required class="form-control border-start-0">
+                            <label>Email Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+
+            <h6 class="title">Address Information</h6>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-geo-alt"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Address Line 1" required class="form-control border-start-0">
+                            <label>Address line 1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-geo-alt"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Address Line 2" class="form-control border-start-0">
+                            <label>Address line 2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-globe"></i></span>
+                            <div class="form-floating">
+                                <select class="form-select border-0" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-globe"></i></span>
+                            <div class="form-floating">
+                                <select class="form-select border-0" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5 col-xl-4">
+            <h6 class="title">Payment Details</h6>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Card Holder Name" value="Max Johnson" required class="form-control border-start-0">
+                            <label>Card Holder Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div>
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-credit-card"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Card Number" value="" required class="form-control border-start-0">
+                            <label>Card Number</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Please enter valid input</div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <div class="mb-2">
+                        <div class="form-group mb-2 position-relative check-valid is-invalid">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-calendar-event"></i></span>
+                                <div class="form-floating">
+                                    <input type="number" placeholder="Expiry Date" value="" required class="form-control border-start-0">
+                                    <label>Expiry Date</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback mb-3">Please enter valid input</div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="mb-4">
+                        <div class="form-group mb-2 position-relative check-valid">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-asterisk"></i></span>
+                                <div class="form-floating">
+                                    <input type="number" placeholder="CVV" value="" required class="form-control border-start-0">
+                                    <label>CVV</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback mb-3">Please enter valid input</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check form-switch mb-4">
+                <input class="form-check-input" type="checkbox" role="switch" id="savecard1">
+                <label class="form-check-label" for="savecard1">Save My Card for future renewal</label>
+            </div>
+            <button class="btn btn-theme">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Authority transfer forms -->
+    <h5 class="title">Authority transfer Form</h5>
+    <div class="row justify-content-center mb-2">
+        <div class="col-12 col-lg-6">
+            <h6 class="title">Owner Information</h6>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <input type="text" placeholder="First Name" value="Max" required class="form-control border-start-0">
+                                <label>First Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <input type="text" placeholder="Last Name" value="Johnson" required class="form-control border-start-0">
+                                <label for="">last Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Email address" value="testst@emailtest.com" required class="form-control border-start-0">
+                            <label>Email Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Address Line 1" required class="form-control border-start-0">
+                            <label>Address line 1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Address Line 2" class="form-control border-start-0">
+                            <label>Address line 2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <select class="form-select border-0" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <select class="form-select border-0" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <h6 class="title">New owner Information</h6>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <input type="text" placeholder="First Name" value="Max" required class="form-control border-start-0">
+                                <label>First Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <input type="text" placeholder="Last Name" value="Johnson" required class="form-control border-start-0">
+                                <label for="">last Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Email address" value="testst@emailtest.com" required class="form-control border-start-0">
+                            <label>Email Address</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Address Line 1" required class="form-control border-start-0">
+                            <label>Address line 1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Address Line 2" class="form-control border-start-0">
+                            <label>Address line 2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <select class="form-select border-0" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="form-group mb-3 position-relative check-valid">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                            <div class="form-floating">
+                                <select class="form-select border-0" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback mb-3">Add valid data </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-check form-switch mb-4">
+        <input class="form-check-input" type="checkbox" role="switch" id="termscondition">
+        <label class="form-check-label" for="termscondition">I agree with terms and condition. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tincidunt nisi, sed porta ligula. Vestibulum consequat sed lorem sed auctor. In hac habitasse platea dictumst. Fusce vulputate justo in mi auctor, ac dignissim dolor aliquet. Duis sit amet aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non dictum turpis. Nam fringilla vulputate augue in mattis.
+            Nullam quis libero turpis. Cras maximus eu lorem sit amet ornare.</label>
+    </div>
+    <h6 class="title">Related Documents attached</h6>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 mb-4">
+                <div class="card-body">
+                    <div class="row gx-3 align-items-center">
+                        <div class="col-auto">
+                            <div class="avatar avatar-50 rounded bg-blue text-white">
+                                <i class="bi bi-file-earmark-text h5 vm"></i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-medium mb-1">Docs</h6>
+                            <p class="text-secondary">residentalproof.docx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 mb-4">
+                <div class="card-body">
+                    <div class="row gx-3 align-items-center">
+                        <div class="col-auto">
+                            <div class="avatar avatar-50 rounded bg-red text-white">
+                                <i class="bi bi-file-pdf h5 vm"></i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="fw-medium mb-1">PDF</h6>
+                            <p class="text-secondary">Identity-card-copy.pdf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ngx-dropzone (change)="onSelect($event)" class="dropzone mb-4">
+        <ngx-dropzone-label>
+            <i class="bi bi-cloud-arrow-up h2 avatar avatar-80 rounded-circle bg-light-theme mb-3"></i>
+            <h5>Drag and Drop files here!</h5>
+        </ngx-dropzone-label>
+        <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+        </ngx-dropzone-image-preview>
+    </ngx-dropzone>
+
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-5">
+            <div class="mb-2">
+                <div class="form-group mb-3 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-person"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Signed by Name" value="Max Johnson" required class="form-control border-start-0">
+                            <label>Signed by Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Add valid data </div>
+            </div>
+        </div>
+        <div class="col-7 col-md-6 col-lg-4">
+            <div class="mb-2">
+                <div class="form-group mb-2 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-geo-alt"></i></span>
+                        <div class="form-floating">
+                            <input type="text" placeholder="Location" value="" required class="form-control border-start-0">
+                            <label>Location</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Please enter valid input</div>
+            </div>
+        </div>
+        <div class="col-5 col-md-6 col-lg-3">
+            <div class="mb-4">
+                <div class="form-group mb-2 position-relative check-valid">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text text-theme bg-white border-end-0"><i class="bi bi-calendar-event"></i></span>
+                        <div class="form-floating">
+                            <input type="date" placeholder="date" value="" required class="form-control border-start-0">
+                            <label>Date</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="invalid-feedback mb-3">Please enter valid input</div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-theme">Confirm</button>
+
+</div>

@@ -1,0 +1,794 @@
+<!-- page title bar -->
+<div class="container-fluid mb-4">
+    <div class="row align-items-center page-title">
+        <div class="col-12 col-md mb-2 mb-sm-0">
+            <h5 class="mb-0">User Roles</h5>
+            <p class="text-secondary">Mange your users and user access by assigning roles</p>
+        </div>
+        <div class="col col-sm-auto">
+        </div>
+        <div class="col-auto ps-0 position-relative">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h4 class="text-center">Best way to organize company is to <span class="text-gradient">Organize User</span> Roles.</h4>
+    <p class="text-secondary text-center mb-4">We work hard, we do it creatively and we like to see you here!</p>
+
+    <div class="card border-0 mb-3">
+        <div class="card-body pb-0">
+            <h5 class="mb-3">Summary of roles assigned</h5>
+            <p class="text-secondary mb-4">A roles are pre-defined groups for access the system across the application. Restricted or not assigned feature will not be available to the particular user role. Roles can be edited and deleted and Roles can be assigned to any user registered with the system.</p>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow-none mb-3">
+                        <div class="card-body">
+                            <h6 class="mb-3">Administrator</h6>
+                            <p class="text-secondary small mb-3">
+                                Bandwidth <b>30Mbps</b> and max. <b>50Gb/day</b> <br>
+                                Restriction: <b>Jobs</b>
+                            </p>
+
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-2.jpg" alt="" class="d-none" />
+                                    </div>
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-3.jpg');">
+                                        <img src="assets/img/user-3.jpg" alt="" class="d-none" />
+                                    </div>
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-4.jpg');">
+                                        <img src="assets/img/user-4.jpg" alt="" class="d-none" />
+                                    </div>
+                                </div>
+                                <div class="col ps-0">
+                                    <p>+2 more</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="btn btn-theme btn-sm">Update Role</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow-none mb-3">
+                        <div class="card-body">
+                            <h6 class="mb-3">Manager</h6>
+                            <p class="text-secondary small mb-3">
+                                Bandwidth <b>10Mbps</b> and max. <b>12Gb/day</b> <br>
+                                Restriction: <b>Level 1</b>, <b>Jobs</b>
+                            </p>
+
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-2.jpg" alt="" class="d-none" />
+                                    </div>
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-3.jpg" alt="" class="d-none" />
+                                    </div>
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-4.jpg" alt="" class="d-none" />
+                                    </div>
+                                </div>
+                                <div class="col ps-0">
+                                    <p>+3 more</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="btn btn-theme btn-sm">Update Role</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow-none mb-3">
+                        <div class="card-body">
+                            <h6 class="mb-3">Developer</h6>
+                            <p class="text-secondary small mb-3">
+                                Bandwidth <b>20Mbps</b> and max. <b>24Gb/day</b> <br>
+                                Restriction: <b>Level 1</b>, <b>Level 2</b>, <b>Jobs</b>
+                            </p>
+
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-2.jpg" alt="" class="d-none" />
+                                    </div>
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-3.jpg" alt="" class="d-none" />
+                                    </div>
+                                    <div class="avatar avatar-30 coverimg rounded-circle me-1" style="background-image: url('assets/img/user-2.jpg');">
+                                        <img src="assets/img/user-4.jpg" alt="" class="d-none" />
+                                    </div>
+                                </div>
+                                <div class="col ps-0">
+                                    <p>+12 more</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="btn btn-theme btn-sm">Update Role</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div>
+        <swiper [slidesPerView]="'auto'" [spaceBetween]="30" [centeredSlides]="false" [pagination]="false" [autoplay]="{delay: 2000}" class="usersliders d-block mb-3">
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-2.jpg');">
+                                <img src="assets/img/user-2.jpg" alt="" class="d-none" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Aditi Johnson</h5>
+                        <p class="text-secondary mb-3">adittests@gmailtest.com</p>
+                        <span class="tag bg-green">Administrator</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-1.jpg');">
+                                <img src="assets/img/user-1.jpg" alt="" class="d-none" name="userimage" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Max Smith</h5>
+                        <p class="text-secondary mb-3">maxsmith@gmailtest.com</p>
+                        <span class="tag bg-theme">Super Admin</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-3.jpg');">
+                                <img src="assets/img/user-3.jpg" alt="" class="d-none" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Lisa Patvaal</h5>
+                        <p class="text-secondary mb-3">lisapatval11@gmaest.com</p>
+                        <span class="tag bg-orange">Moderator</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-4.jpg');">
+                                <img src="assets/img/user-4.jpg" alt="" class="d-none" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Dwayne Johnson</h5>
+                        <p class="text-secondary mb-3">dwaynejohn008@test.com</p>
+                        <span class="tag bg-red">Accountant</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-2.jpg');">
+                                <img src="assets/img/user-2.jpg" alt="" class="d-none" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Aditi Johnson</h5>
+                        <p class="text-secondary mb-3">adittests@gmailtest.com</p>
+                        <span class="tag bg-pink">Developer</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-1.jpg');">
+                                <img src="assets/img/user-1.jpg" alt="" class="d-none" name="userimage" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Max Smith</h5>
+                        <p class="text-secondary mb-3">maxsmith@gmailtest.com</p>
+                        <span class="tag bg-theme">Super Admin</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-3.jpg');">
+                                <img src="assets/img/user-3.jpg" alt="" class="d-none" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Lisa Patvaal</h5>
+                        <p class="text-secondary mb-3">lisapatval11@gmaest.com</p>
+                        <span class="tag bg-orange">Moderator</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                            <div class="dropdown d-inline-block position-absolute top-0 end-0 z-index-1">
+                                <a class="btn btn-link text-white dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                            <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/user-2.jpg');">
+                                <img src="assets/img/user-2.jpg" alt="" class="d-none" />
+                            </figure>
+                        </div>
+                        <h5 class="text-truncate mb-1">Dwayne Johnson</h5>
+                        <p class="text-secondary mb-3">dwaynejohn008@test.com</p>
+                        <span class="tag bg-red">Accountant</span>
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-12 col-xl-6">
+            <div class="card border-0 mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-5 text-center">
+                            <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                                <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/bg-13.jpg');">
+                                    <img src="assets/img/bg-13.jpg" alt="" class="d-none" />
+                                </figure>
+                            </div>
+                            <h5 class="text-truncate mb-1">Jack Ma Li</h5>
+                            <p class="text-secondary mb-3">jackmali@gmailtest.com</p>
+                            <span class="tag bg-yellow">Developer</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-7 border-left-dashed">
+                            <div class="row align-items-center mb-2">
+                                <div class="col">
+                                    <h6 class="title">Access Assigned:</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="dropdown d-inline-block">
+                                        <a class="btn btn-link dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                            <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group list-group-flush bg-none">
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Timesheet and Timelog
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Project Management
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Company Profile and Personalization
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Track and Manage Task
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Bandwidth <b>10Mbps</b> and max. <b>24Gb/day</b>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Restriction: <b>Level 1</b>, <b>Level 2</b>, <b>Jobs</b>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Emergency Contacts
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-xl-6">
+            <div class="card border-0 mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-5 text-center">
+                            <div class="h-200 overflow-hidden rounded mb-3 position-relative z-index-0">
+                                <figure class="h-100 w-100 coverimg zoomout" style="background-image: url('assets/img/bg-8.jpg');">
+                                    <img src="assets/img/bg-8.jpg" alt="" class="d-none" />
+                                </figure>
+                            </div>
+                            <h5 class="text-truncate mb-1">Sandy Toppaca</h5>
+                            <p class="text-secondary mb-3">ssandy001@gmailtest.com</p>
+                            <span class="tag bg-purple">Manager</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-7 border-left-dashed">
+                            <div class="row align-items-center mb-2">
+                                <div class="col">
+                                    <h6 class="title">Access Assigned:</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="dropdown d-inline-block">
+                                        <a class="btn btn-link dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0)">Move</a></li>
+                                            <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group list-group-flush bg-none">
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Timesheet and Time-log
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Project Management
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Company Profile and Personalization
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Track and Manage Task
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Bandwidth <b>15Mbps</b> and max. <b>10Gb/day</b>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Restriction: <b>Level 1</b>, <b>Level 2</b>, <b>Level 3</b>, <b>Jobs</b>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <i class="bi bi-check-circle text-muted"></i>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Emergency Contacts
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 mb-4">
+        <div class="card-header border-bottom">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <button class="btn btn-link border-0 innersidebar-btn" (click)="innermenuopen()"><i class="bi bi-layout-sidebar h5 vm"></i></button>
+                </div>
+                <div class="col-auto">
+                    <i class="bi bi-people h5 avatar avatar-40 bg-light-theme rounded"></i>
+                </div>
+                <div class="col">
+                    <h6 class="fw-medium mb-0">User Roles</h6>
+                    <p class="small text-secondary">Add/Update user Roles & Permission</p>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-theme btn-sm"><i class="bi bi-plus"></i> Add Role</button>
+                    <button class="btn btn-theme btn-sm ms-1"><i class="bi bi-plus"></i> Add Employee</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="inner-sidebar-wrap">
+                <div class="inner-sidebar">
+                    <ul class="nav nav-pills mb-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-person"></i></div>
+                                <div class="col">Users</div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" data-bs-auto-close="false" data-bs-display="static" role="button" aria-expanded="true">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-clipboard-check vm"></i></div>
+                                <div class="col">Roles</div>
+                                <div class="arrow"><i class="bi bi-chevron-down plus"></i> <i class="bi bi-chevron-up minus"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu show">
+                                <li>
+                                    <a class="dropdown-item nav-link active">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-patch-check"></i>
+                                        </div>
+                                        <div class="col align-self-center">Developer</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-patch-check"></i>
+                                        </div>
+                                        <div class="col align-self-center">Administrator</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-patch-check"></i>
+                                        </div>
+                                        <div class="col align-self-center">Moderator</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-patch-check"></i>
+                                        </div>
+                                        <div class="col align-self-center">Manager</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-stoplights"></i></div>
+                                <div class="col">Restriction</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-heart"></i></div>
+                                <div class="col">Favorite</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-sidebar-content p-3">
+                    <h5 class="title">Developer</h5>
+                    <p class="text-secondary">Developers are organization assets and they need internet access, files storage, communication email access, check-in/check-out access, Time-sheet, Management portal and so many things to complete their daily needs and easy access to flow-less development process. Also this will help developers to be productive in good work culture. </p>
+                    <br>
+
+                    <h6 class="title">Access and Permissions</h6>
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <ul class="list-group list-group-flush bg-none">
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles1" checked>
+                                                <label class="form-check-label" for="roles1"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Time sheet and Time-log
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles2">
+                                                <label class="form-check-label" for="roles2"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Project Management
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles3" checked>
+                                                <label class="form-check-label" for="roles3"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Company Profile
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles7" checked>
+                                                <label class="form-check-label" for="roles7"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Track and Manage Task
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles6" checked>
+                                                <label class="form-check-label" for="roles6"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto ps-0">
+                                            Emergency Contacts
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <ul class="list-group list-group-flush bg-none">
+                                <li class="list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles4" checked>
+                                                <label class="form-check-label" for="roles4"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <p>Internet Bandwidth</p>
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <div class="input-group border">
+                                                        <input type=" text" class="form-control" placeholder="Set max. Speed" value="30">
+                                                        <span class="input-group-text bg-light-theme">Mbps</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="input-group border">
+                                                        <input type=" text" class="form-control" placeholder="Set max. data usage" value="24">
+                                                        <span class="input-group-text bg-light-theme">Gb/day</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class=" list-group-item text-secondary">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="roles5" checked>
+                                                <label class="form-check-label" for="roles5"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col ps-0">
+                                            <p>Restriction</p>
+                                            <div class="input-group input-group-md border rounded">
+                                                <span class="input-group-text text-theme"><i class="bi bi-stoplights"></i></span>
+                                                <select class="form-control simplechosen" multiple="">
+                                                    <option value="Level1" selected>Level 1</option>
+                                                    <option value="Level2" selected>Level 2</option>
+                                                    <option value="Level3">Level 3</option>
+                                                    <option value="Level4">Level 4</option>
+                                                    <option value="Level5">Level 5</option>
+                                                    <option value="Jobs" selected>Jobs</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h6 class="title">Users under this Roles</h6>
+                    <div class="input-group input-group-md border rounded">
+                        <span class="input-group-text text-theme"><i class="bi bi-people"></i></span>
+                        <select class="form-control simplechosen" multiple="">
+                            <option value="user1" selected>Kartikaa Joshi</option>
+                            <option value="user2" selected>Steven Jobs</option>
+                            <option value="user3">Martian Apprila</option>
+                            <option value="user4" selected>Ken Williamson </option>
+                            <option value="user5">Jack Manas</option>
+                            <option value="user6">Corolla Protect</option>
+                        </select>
+                    </div>
+                    <hr class="border-top">
+
+                    <div class="d-block mb-3">
+                        <a routerLink="/pages/profile/professional/" class="tag mb-2 me-2">
+                            <figure class="avatar avatar-30 rounded-circle me-1 coverimg" style="background-image: url('assets/img/user-4.jpg');"><img src="assets/img/user-4.jpg" alt="" class="d-none" /></figure> James Wang
+                        </a>
+                        <a routerLink="/pages/profile/professional/" class="tag mb-2 me-2">
+                            <figure class="avatar avatar-30 rounded-circle me-1 coverimg" style="background-image: url('assets/img/user-2.jpg');"><img src="assets/img/user-2.jpg" alt="" class="d-none" /></figure> Aliaa Shen
+                        </a>
+                        <a routerLink="/pages/profile/professional/" class="tag mb-2 me-2">
+                            <figure class="avatar avatar-30 rounded-circle me-1 coverimg" style="background-image: url('assets/img/user-3.jpg');"><img src="assets/img/user-3.jpg" alt="" class="d-none" /></figure> Ketti Pattasa
+                        </a>
+                        <a routerLink="/pages/profile/professional/" class="tag mb-2 me-2">
+                            <figure class="avatar avatar-30 rounded-circle me-1 coverimg" style="background-image: url('assets/img/user-1.jpg');"><img src="assets/img/user-1.jpg" alt="" class="d-none" name="userimage" /></figure> Max Smith
+                        </a>
+                    </div>
+                    <p class="text-secondary">A roles are pre-defined groups for access the system across the application. Restricted or not assigned feature will not be available to the particular user role. Roles can be edited and deleted and Roles can be assigned to any user registered with the system.</p>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

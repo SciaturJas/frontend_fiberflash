@@ -1,0 +1,567 @@
+<!-- page title bar -->
+<div class="container-fluid">
+    <div class="row align-items-center page-title">
+        <div class="col-12 col-md mb-2 mb-sm-0">
+            <h5 class="mb-0">Subscription Plan</h5>
+            <p class="text-secondary">Review your plan and payments</p>
+        </div>
+        <div class="col col-sm-auto">
+        </div>
+        <div class="col-auto ps-0 position-relative">
+        </div>
+    </div>
+</div>
+
+<!-- welcome bar -->
+<div class="container-fluid bg-gradient-theme-light mb-4">
+    <div class="row align-self-center ">
+        <div class="col-12 col-xxl-11 mx-auto">
+            <div class="row align-items-center">
+
+                <!-- welcome message -->
+                <div class="col-12 col-md py-3 py-md-5">
+                    <h2 class="fw-light mb-0 text-secondary">Welcome to your account,</h2>
+                    <h1 class="display-3 username ">Maxartkiller</h1>
+                </div>
+
+                <!-- rank and progress -->
+                <div class="col-auto ml-auto py-3 py-md-5 align-self-center">
+                    <div class="row align-self-center mb-4">
+                        <div class="col col-md col-lg-auto mnw-100 text-center">
+                            <i class="bi bi-trophy h5 avatar avatar-50 bg-light-orange text-orange rounded-circle mb-2"></i>
+                            <h3 class="increamentcount mb-0">2586</h3>
+                            <p class="small text-secondary">Level 3</p>
+                        </div>
+                        <div class="col col-md col-lg-auto mnw-100 text-center">
+                            <i class="bi bi-award h5 avatar avatar-50 bg-light-green text-green rounded-circle mb-2"></i>
+                            <h3 class="increamentcount mb-0">1583</h3>
+                            <p class="small text-secondary">Your Rank</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-4 col-xl-3">
+            <!-- profile details -->
+            <div class="text-center mb-4">
+                <figure class="avatar avatar-140 coverimg rounded-circle shadow-md mb-3 border-white border-3">
+                    <img src="assets/img/user-1.jpg" alt="" name="userimage" />
+                </figure>
+                <h4 class="mb-1">Max Smith</h4>
+                <p class="text-secondary">London, UK</p>
+                <br>
+                <p>
+                    <a href="tel:+18358638952581" class="tag theme-green mb-2 me-2">
+                        <i class="avatar avatar-30 rounded-circle me-1 vm bi bi-telephone"></i> +1835863895A2581
+                    </a>
+                    <a href="mailto:information@maxartkiller.com" class="tag text-truncate mb-2 me-2">
+                        <i class="avatar avatar-30 rounded-circle me-1 vm bi bi-envelope"></i> test@maxartkiller.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="card border-0 bg-gradient-theme-light mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <figure class="avatar avatar-50 rounded-circle bg-yellow text-white">
+                                <i class="bi bi-star mb-1 vm"></i>
+                            </figure>
+                        </div>
+                        <div class="col ps-0">
+                            <h6 class="mb-0">Business </h6>
+                            <p class="fw-normal">Annual Plan</p>
+                        </div>
+                        <div class="col-auto">
+                            <h4 class="mb-0">$ 250</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class=" row align-items-center">
+                        <div class="col-auto">
+                            <p class="mb-0">22-June-2022</p>
+                            <p class="small text-muted">Next Due</p>
+                        </div>
+                        <div class="col text-end">
+                            <button class="btn btn-sm btn-theme">Pay now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-3">
+                <div class="col-auto">
+                    <i class="bi bi-credit-card h5 me-1 avatar avatar-40 bg-light-green text-green rounded me-2"></i>
+                </div>
+                <div class="col ps-0">
+                    <h6 class="fw-medium mb-0">Payment Method</h6>
+                    <p class="text-secondary small">1 card saved</p>
+                </div>
+                <div class="col-auto">
+                    <a class="btn btn-sm btn-link"><i class="bi bi-plus-lg"></i> Add</a>
+                </div>
+            </div>
+            <swiper [slidesPerView]="'auto'" [centeredSlides]="true" [pagination]="false" [autoplay]="{delay: 2000}" class="creditcards mb-4">
+                <ng-template swiperSlide>
+                    <div class="card border-0 mb-2 theme-blue">
+                        <div class="card-body">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-auto align-self-center">
+                                    <img src="assets/img/visa.png" alt="">
+                                </div>
+                                <div class="col text-end">
+                                    <p class="size-12">
+                                        <span class="text-muted small">City Bank</span><br>
+                                        <span class="">Credit Card</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="fw-medium h6 mb-3">
+                                000 0000 0001 546598
+                            </p>
+                            <div class="row">
+                                <div class="col-auto size-12">
+                                    <p class="mb-0 text-muted small">Expiry</p>
+                                    <p>09/023</p>
+                                </div>
+                                <div class="col text-end size-12">
+                                    <p class="mb-0 text-muted small">Card Holder</p>
+                                    <p>Maxartkiller</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row amount-data">
+                        <div class="col">
+                            <p class="text-secondary small mb-1">Expense</p>
+                            <p>1500.00 <small class="text-success">18.0% <i class="bi bi-arrow-up"></i></small></p>
+                        </div>
+                        <div class="col-auto text-end">
+                            <p class="text-secondary small mb-1">Limit Remain</p>
+                            <p>13500.00</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card border-0 theme-pink mb-2">
+                        <div class="card-body">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-auto align-self-center">
+                                    <img src="assets/img/visa.png" alt="">
+                                </div>
+                                <div class="col text-end">
+                                    <p class="size-12">
+                                        <span class="text-muted small">City Bank</span><br>
+                                        <span class="">Credit Card</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="fw-medium h6 mb-3">
+                                000 0000 0001 546598
+                            </p>
+                            <div class="row">
+                                <div class="col-auto size-12">
+                                    <p class="mb-0 text-muted small">Expiry</p>
+                                    <p>09/023</p>
+                                </div>
+                                <div class="col text-end size-12">
+                                    <p class="mb-0 text-muted small">Card Holder</p>
+                                    <p>Maxartkiller</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row amount-data">
+                        <div class="col">
+                            <p class="text-secondary small mb-1">Expense</p>
+                            <p>3650.00 <small class="text-danger">11.0% <i class="bi bi-arrow-down"></i></small></p>
+                        </div>
+                        <div class="col-auto text-end">
+                            <p class="text-secondary small mb-1">Limit Remain</p>
+                            <p>35500.00</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card border-0 theme-yellow mb-2">
+                        <div class="card-body">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-auto align-self-center">
+                                    <img src="assets/img/visa.png" alt="">
+                                </div>
+                                <div class="col text-end">
+                                    <p class="size-12">
+                                        <span class="text-muted small">City Bank</span><br>
+                                        <span class="">Credit Card</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="fw-medium h6 mb-3">
+                                000 0000 0001 546598
+                            </p>
+                            <div class="row">
+                                <div class="col-auto size-12">
+                                    <p class="mb-0 text-muted small">Expiry</p>
+                                    <p>09/023</p>
+                                </div>
+                                <div class="col text-end size-12">
+                                    <p class="mb-0 text-muted small">Card Holder</p>
+                                    <p>Maxartkiller</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row amount-data">
+                        <div class="col">
+                            <p class="text-secondary small mb-1">Expense</p>
+                            <p>1500.00 <small class="text-success">18.0 <i class="bi bi-arrow-up"></i></small></p>
+                        </div>
+                        <div class="col-auto text-end">
+                            <p class="text-secondary small mb-1">Limit Remain</p>
+                            <p>13500.00</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </swiper>
+        </div>
+        <div class="col-12 col-lg-8 col-xl-9">
+            <div class="card border-0 bg-gradient-theme-light theme-yellow mb-4 alert alert-dismissible p-0" role="alert">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="bi bi-telephone-plus h4 me-1 avatar avatar-40 text-theme rounded"></i>
+                        </div>
+                        <div class="col ps-0">
+                            <h6>Add a phone number</h6>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-sm btn-link" data-bs-dismiss="alert"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm">
+                            <p>Ensure you never lose access to your account and receive important account updates like billing and security alerts.</p>
+                        </div>
+                        <div class="col-auto col-sm-auto">
+                            <button class="btn btn-sm btn-theme my-2">Add Phone</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 mb-4">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-auto">
+                            <i class="bi bi-star me-1 avatar avatar-40 bg-light-green text-green rounded"></i>
+                        </div>
+                        <div class="col">
+                            <h6 class="mb-0">Current plan </h6>
+                            <p class="fw-normal">Manage Plan</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="dropdown d-inline-block">
+                                <a class="text-secondary dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Change plan</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Cancel Subscription</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-3 mb-4 mb-xl-0">
+                            <div class="card shadow-none overflow-hidden">
+                                <div class="coverimg h-80 w-100" style="background-image: url('assets/img/bg-5.jpg');">
+                                    <img src="assets/img/bg-5.jpg" alt="" class="d-none" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <figure class="avatar avatar-60 mb-3 mx-auto mtop-35 bg-light rounded p-1 border">
+                                        <img src="assets/img/favicon48.png" name="logoimage" class="mw-100" alt="" />
+                                    </figure>
+                                    <h4 class="mb-0">Business</h4>
+                                    <p class="fw-normal text-secondary">Annual Plan</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <h4 class="mb-0">$ 250.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-5 mb-4 mb-lg-0">
+                            <h6 class="mb-1">Plan Features</h6>
+                            <p class="text-secondary mb-4">Including features of basic plan</p>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Free Shipping
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Unlimited Send Money
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Multiple Currencies Support
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Unlimited Send Money
+                                </div>
+                            </div>
+                            <a>More details</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12 col-xl-4">
+                            <h6 class="mb-1">Payment Method</h6>
+                            <p class="text-secondary mb-4">1 Credit Card is saved</p>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-credit-card text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Visa ending ****<b>25480</b>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-calendar-event text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Next Due date is <b>22-June-2022</b>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="btn btn-sm btn-outline-theme mb-4">Add Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-gradient-theme-light theme-red border-0 mb-4">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-auto">
+                            <i class="bi bi-star me-1 avatar avatar-40 bg-light-theme rounded"></i>
+                        </div>
+                        <div class="col">
+                            <h6 class="mb-0">Previous plan </h6>
+                            <p class="fw-normal">Cancelled Recent plan</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="dropdown d-inline-block">
+                                <a class="text-secondary dd-arrow-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" role="button">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Subscribe</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Raise issue</a></li>
+                                    <li><a class="dropdown-item text-danger" href="javascript:void(0)">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-3 mb-4 mb-xl-0">
+                            <div class="card shadow-none overflow-hidden">
+                                <div class="coverimg h-80 w-100" style="background-image: url('assets/img/bg-16.jpg');">
+                                    <img src="assets/img/bg-16.jpg" alt="" class="d-none" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <figure class="avatar avatar-60 mb-3 mx-auto mtop-35 bg-light rounded p-1 border">
+                                        <img src="assets/img/favicon48.png" name="logoimage" class="mw-100" alt="" />
+                                    </figure>
+                                    <h4 class="mb-0">Basic</h4>
+                                    <p class="fw-normal text-secondary">Annual Plan</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <h4 class="mb-0">$ 250.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-5 mb-4 mb-lg-0">
+                            <h6 class="mb-1">Plan Features</h6>
+                            <p class="text-secondary mb-4">Including features of Free plan</p>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Free Shipping
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Unlimited Send Money
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Multiple Currencies Support
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Unlimited Send Money
+                                </div>
+                            </div>
+                            <a>More details</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12 col-xl-4">
+                            <h6 class="mb-1">Payment Method</h6>
+                            <p class="text-secondary mb-4">1 Credit Card is saved</p>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-credit-card text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    Visa ending ****<b>25480</b>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-calendar-event text-muted"></i>
+                                </div>
+                                <div class="col-auto ps-0">
+                                    This plan is cancelled on<br><b>14-June-2021</b>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 mb-4">
+                <div class="card-body">
+                    <h4 class="mt-3 mb-2">Best way to work fast and east to use.<br>Stay tracked and also committed with priorities.</h4>
+                    <h6 class="text-secondary fw-medium mb-4">Get involved in the race of technology and digitization. Win the heart not the war. Go beyond of imagination but not far from your loved ones.</h6>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-6 mb-4 mb-lg-0">
+                            <h5 class="mb-1">Creators of statements</h5>
+                            <p class="mb-4">All the export functionalities are available for your reports and email to any person around the world.</p>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-filetype-pdf h4 me-1 avatar avatar-40 bg-light-red text-red rounded"></i>
+                                </div>
+                                <div class="col ps-0">
+                                    <h6>PDF export</h6>
+                                    <p class="text-secondary">Pdf export functionalities available for all kind of reports including charts and background images.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-filetype-xlsx h4 me-1 avatar avatar-40 bg-light-green text-green rounded"></i>
+                                </div>
+                                <div class="col ps-0">
+                                    <h6>Excel export</h6>
+                                    <p class="text-secondary">Excel export functionalities available for all kind of reports including charts.</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-theme btn-rounded mb-3">Buy now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 mb-lg-0">
+                            <h5 class="mb-1">Analytics Stronger</h5>
+                            <p class="mb-4">Keep the eye on your visitors and users. Downloads, Clicked,shared with region, gender and people are available.</p>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-bar-chart h4 me-1 avatar avatar-40 bg-light-purple text-purple rounded"></i>
+                                </div>
+                                <div class="col ps-0">
+                                    <h6>PDF export</h6>
+                                    <p class="text-secondary">Pdf export functionalities available for all kind of reports including charts and background images.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <i class="bi bi-pie-chart h4 me-1 avatar avatar-40 bg-light-theme rounded"></i>
+                                </div>
+                                <div class="col ps-0">
+                                    <h6>Excel export</h6>
+                                    <p class="text-secondary">Excel export functionalities available for all kind of reports including charts.</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-theme btn-rounded mb-3">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mb-4">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-cash-stack h3 avatar avatar-60 mb-3 text-theme bg-light-theme rounded-circle"></i>
+                            <h3>1254.00 <small>USD</small></h3>
+                            <h5>Your Earning</h5>
+                            <p class="text-secondary mb-4">1 June 2022 - 31 June 2022</p>
+                            <p><a routerLink="/pages/other/earning/" class="btn btn-outline-theme btn-rounded">View More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mb-4">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-wallet h3 avatar avatar-60 mb-3 text-theme bg-light-theme rounded-circle"></i>
+                            <h3>1400.00 <small>USD</small></h3>
+                            <h5>Your Payouts</h5>
+                            <p class="text-secondary mb-4">May 2022 <span class="badge bg-success mx-2">Success</span></p>
+                            <p><a routerLink="/pages/other/payment/" class="btn btn-outline-theme btn-rounded">View All</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 mb-4">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-receipt h3 avatar avatar-60 mb-3 text-theme bg-light-theme rounded-circle"></i>
+                            <h3>16</h3>
+                            <h5>Your Statements</h5>
+                            <p class="text-secondary mb-4">1 June 2022 - 25 June 2022</p>
+                            <p><a routerLink="/pages/other/statement/" class="btn btn-outline-theme btn-rounded">View all</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
