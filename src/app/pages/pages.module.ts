@@ -10,6 +10,8 @@ import { NotificationComponent } from './layout/notification/notification.compon
 import { PageFooterComponent } from './layout/page-footer/page-footer.component';
 import { Daterangepicker } from 'ng2-daterangepicker';
 import { SharedModule } from '../shared/shared.module';
+import { UtilsModule } from '../utils/utils.module';
+
 
 
 
@@ -25,7 +27,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     PagesRoutingModule,
     LayoutModule,
-    Daterangepicker
+    Daterangepicker,
+    UtilsModule, 
   ],
   exports: [
 

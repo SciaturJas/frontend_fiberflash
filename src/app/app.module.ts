@@ -27,6 +27,9 @@ import { SalesComponent } from './sales/pages/sales/sales.component';
 import { StatesAveriasComponent } from './tecnic/pages/states-averias/states-averias.component';
 import { AveriasComponent } from './tecnic/pages/averias/averias.component';
 import { ActivitiesComponent } from './admin/pages/activities/activities.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ClientsService } from './utils/services/clients.service';
+import { CommonModule } from '@angular/common';
 
 
 const ngWizardConfig: NgWizardConfig = {
@@ -37,8 +40,8 @@ const ngWizardConfig: NgWizardConfig = {
   declarations: [
     AppComponent,
     CajasComponent,
-    ClientsComponent,
-    DistritoComponent,
+    // ClientsComponent,
+    // DistritoComponent,
     OnusComponent,
     PlansComponent,
     ServicesComponent,
@@ -50,6 +53,7 @@ const ngWizardConfig: NgWizardConfig = {
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     SwiperModule,
     FormsModule,
@@ -64,7 +68,7 @@ const ngWizardConfig: NgWizardConfig = {
     NgxDropzoneModule,
     NgWizardModule.forRoot(ngWizardConfig),
   ],
-  providers: [PersonalizationService, AuthenticationService],
+  providers: [PersonalizationService, AuthenticationService, ClientsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
