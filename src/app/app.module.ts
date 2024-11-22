@@ -16,6 +16,17 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { NgWizardModule, NgWizardConfig, THEME } from 'ng-wizard';
 import { PersonalizationService } from './shared/services/personalization.service';
 import { AuthenticationService } from './shared/services/authentication.service';
+import { CajasComponent } from './utils/pages/cajas/cajas.component';
+import { ClientsComponent } from './utils/pages/clients/clients.component';
+import { DistritoComponent } from './utils/pages/distrito/distrito.component';
+import { OnusComponent } from './utils/pages/onus/onus.component';
+import { PlansComponent } from './sales/pages/plans/plans.component';
+import { ServicesComponent } from './sales/pages/services/services.component';
+import { StateSalesComponent } from './sales/pages/state-sales/state-sales.component';
+import { SalesComponent } from './sales/pages/sales/sales.component';
+import { StatesAveriasComponent } from './tecnic/pages/states-averias/states-averias.component';
+import { AveriasComponent } from './tecnic/pages/averias/averias.component';
+import { ActivitiesComponent } from './admin/pages/activities/activities.component';
 
 
 const ngWizardConfig: NgWizardConfig = {
@@ -25,6 +36,17 @@ const ngWizardConfig: NgWizardConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+    CajasComponent,
+    ClientsComponent,
+    DistritoComponent,
+    OnusComponent,
+    PlansComponent,
+    ServicesComponent,
+    StateSalesComponent,
+    SalesComponent,
+    StatesAveriasComponent,
+    AveriasComponent,
+    ActivitiesComponent,
   ],
   imports: [
     BrowserModule,
