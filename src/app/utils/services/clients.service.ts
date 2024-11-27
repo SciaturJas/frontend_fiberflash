@@ -15,7 +15,6 @@ export class ClientsService {
 
   getClients() {
     const apiUrl = this.envUrl.urlAddress + 'utils/list/all-clients/';
-    console.log('URL construida para la solicitud:', apiUrl);  // Verifica que la URL es correcta
     return this.httpClient.get<any>(apiUrl);
   }
 
