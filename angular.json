@@ -92,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "windoors:build:production"
+              "buildTarget": "windoors:build:production"
             },
             "development": {
-              "browserTarget": "windoors:build:development"
+              "buildTarget": "windoors:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "windoors:build"
+            "buildTarget": "windoors:build"
           }
         },
         "test": {
