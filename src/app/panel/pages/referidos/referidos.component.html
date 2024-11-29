@@ -1,0 +1,379 @@
+<div class="page-header">
+    <h1 class="page-title my-auto">Jatun Ayllu</h1>
+    <div>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"> <a href="/"><i class="fe fe-home"></i></a></li>
+            <li class="breadcrumb-item"> <a href="/">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Referidos</li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-12"></div>
+    <div class="col-lg-3 col-md-3 col-sm-12 card mx-3">
+        <div class="row" style="margin: 5% 2% 5% 2%;">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <a  href="javascript:void(0)" (click)="openModal('Escanear código QR')">
+                    <h5>Escanear código QR</h5>
+                    <!-- <h3 style="color: #7366FF">17</h3> -->
+                    <br>
+                    <p style="margin-top: -10px; font-size: 12px; font-weight: 600;">Es para que tu afiliado escanee el QR y pueda obtener el formulario</p>
+                    <p style="font-size: 13px; font-weight: 300;">Presiona para mostrar QR</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center" style="display: flex;align-items: center;justify-content: center;">
+                <i class="fa fa-qrcode" style="font-size: 10vh;"></i>
+                <!-- <circle-progress [percent]="70" [radius]="40" [space]="-5" [outerStrokeWidth]="5"
+                            [innerStrokeWidth]="5" [showInnerStroke]="true" [outerStrokeColor]="'#7366FF'"
+                            [innerStrokeColor]="'#e5e4e3'" [showSubtitle]="false" [animation]="true" [animationDuration]="1000"
+                            [showImage]="true" [imageHeight]="12"
+                            [imageWidth]="12">
+                </circle-progress>
+                <h4 style="position: absolute;">70%</h4> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 card mx-3">
+        <div class="row" style="margin: 5% 2% 5% 2%;">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <a  href="javascript:void(0)" (click)="openModal('Descargar código QR')">
+                    <h5>Descargar código QR</h5>
+                    <!-- <h3 style="color: #FF3364">4</h3> -->
+                    <br>
+                    <p style="margin-top: -10px; font-size: 12px; font-weight: 600;">Es para descargar tu QR y guardarlo en tu carrete</p>
+                    <p style="font-size: 13px; font-weight: 300;">Presiona para descargar QR</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center" style="display: flex;align-items: center;justify-content: center;">
+                <i class="fa fa-download" style="font-size: 10vh;"></i>
+                <!-- <circle-progress [percent]="80" [radius]="40" [space]="-5" [outerStrokeWidth]="5"
+                            [innerStrokeWidth]="5" [showInnerStroke]="true" [outerStrokeColor]="'#FF3364'"
+                            [innerStrokeColor]="'#e5e4e3'" [showSubtitle]="false" [animation]="true" [animationDuration]="1000"
+                            [showImage]="true" [imageHeight]="12"
+                            [imageWidth]="12">
+                </circle-progress>
+                <h4 style="position: absolute;">80%</h4> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 card mx-3">
+        <div class="row" style="margin: 5% 2% 5% 2%;">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <a  href="javascript:void(0)" (click)="openModal('Link de Referidos')">
+                    <h5>Link de Referidos</h5>
+                    <!-- <h3 style="color: #54BA4A">36</h3> -->
+                    <br>
+                    <p style="margin-top: -10px; font-size: 12px; font-weight: 600;">Es para copiar el link y enviárselo a tus afiliados para el registro</p>
+                    <p style="font-size: 13px; font-weight: 300;">Presiona para copiar link</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center" style="display: flex;align-items: center;justify-content: center;">
+                <i class="fa fa-link" style="font-size: 10vh;"></i>
+                <!-- <circle-progress [percent]="48" [radius]="40" [space]="-5" [outerStrokeWidth]="5"
+                            [innerStrokeWidth]="5" [showInnerStroke]="true" [outerStrokeColor]="'#54BA4A'"
+                            [innerStrokeColor]="'#e5e4e3'" [showSubtitle]="false" [animation]="true" [animationDuration]="1000"
+                            [showImage]="true" [imageHeight]="12"
+                            [imageWidth]="12">
+                </circle-progress>
+                <h4 style="position: absolute;">48%</h4> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-1 col-sm-12"></div>
+</div>
+<div class="row my-3">
+    <div class="col-lg-3 col-md-3 col-sm-12"></div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card">
+            <div class="row g-0">
+                <!-- <div class="col-md-4" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; background-color: #4393FC;">
+                </div> -->
+                <div class="col-md-12" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <h2>Añade un amigo</h2>
+                        <form [formGroup]="formRegister" class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <ng-select formControlName="pais"
+                                            [items]="countries"
+                                            bindLabel="name"
+                                            bindValue="id"
+                                            placeholder="SELECCIONAR PAIS*"
+                                            (change)="selectPais($event)">
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" type="text" formControlName="numDoc" (keyup)="getInfoCliente($event)"
+                                            onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"
+                                            placeholder="N° Documento" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <ng-select formControlName="genero"
+                                            [items]="genero"
+                                            bindLabel="name"
+                                            bindValue="name"
+                                            placeholder="GENERO*">
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="zmdi zmdi-account" aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" type="text" formControlName="nombres"
+                                            placeholder="NOMBRES" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="zmdi zmdi-account" aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" type="text" formControlName="apellidos"
+                                            placeholder="APELLIDOS" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" type="date" formControlName="fecha_nac"
+                                            required  placement="top" ngbTooltip="Fecha Nacimiento">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="zmdi zmdi-email" aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" type="email" formControlName="email"
+                                            placeholder="CORREO ELECTRÓNICO" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-12">
+                                <div class="form-group">
+                                    <ng-select formControlName="prefijo"
+                                            [items]="prefijo"
+                                            bindLabel="name"
+                                            bindValue="id"
+                                            placeholder="PREFIJO*"
+                                            (change)="selectPais($event)">
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="zmdi zmdi-phone" aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" placeholder="CELULAR"
+                                           formControlName="celular" maxlength="9" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <ng-select formControlName="departamento"
+                                            [items]="departamento"
+                                            bindLabel="name"
+                                            bindValue="id_dep"
+                                            placeholder="SELECCIONAR DEPARTAMENTO*"
+                                            (change)="selectDepartamento($event)">
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <ng-select formControlName="provincia"
+                                            [items]="provincia"
+                                            bindLabel="name"
+                                            bindValue="id_pro"
+                                            placeholder="SELECCIONAR PROVINCIA*"
+                                            (change)="selectProvincia($event)">
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <ng-select formControlName="distrito"
+                                            [items]="distrito"
+                                            bindLabel="name"
+                                            bindValue="id_dist"
+                                            placeholder="SELECCIONAR DISTRITO*">
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                            <i class="fa fa-map-marker " aria-hidden="true"></i>
+                                        </a>
+                                        <input autocomplete="off" class="form-control" placeholder="DIRECCION"
+                                           formControlName="direccion">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 row">
+                                <hr>
+                                <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let pack of packs">
+                                    <div class="card text-center text-uppercase justify-content-center" 
+                                        [style.border]=" '1px solid black !important'" [style.background]="pack.data.color">
+                                        <div style="margin: 1% 1% 1% 1%;">
+                                            <small><b>{{pack.name}}</b></small>
+                                            <br>
+                                            <small>{{pack.descriptions}} --> S/ {{pack.total_price}}</small>
+                                            <br>
+                                            <button (click)="openModalValidate(pack)" class="btn btn-outline-primary btn-sm my-2">Seleccionar</button>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <!-- <div class="card col-lg-4 col-md-4 col-sm-12 text-center text-uppercase justify-content-center"
+                                    style="border: 1px solid black !important;background:radial-gradient(circle, rgba(131,217,212,0.8631827731092436) 0%, rgba(55,134,73,0.6474964985994398) 100%)">
+                                    <div style="margin: 1% 1% 1% 1%;">
+                                        <small>Pack Empresarial <br> Promoción</small>
+                                        <br>
+                                        <small>6 Pts S/ 500</small>
+                                        <br>
+                                        <button (click)="openModalValidate()" class="btn btn-outline-primary btn-sm my-2">Seleccionar</button>
+                                    </div>
+                                </div> -->
+                            </div>         
+                            <div  class="col-sm-12 col-md-12 col-lg-12 text-center my-3 text-white" *ngIf="!validar_pago">
+                                <ngb-alert type="warning" [dismissible]="false">
+                                    <i class="fa fa-money me-2" aria-hidden="true"></i> <b> Falta Subir el Comprobante del Pago</b><br>
+                                </ngb-alert>
+                            </div>   
+                            <div  class="col-sm-12 col-md-12 col-lg-12 text-center my-3 text-white" *ngIf="validar_pago">
+                                <ngb-alert type="success" [dismissible]="false">
+                                    <i class="fa fa-money me-2" aria-hidden="true"></i> <b> Comprobante de Pago Subido</b><br>
+                                </ngb-alert>
+                            </div>                      
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-label">Yo acepto los <a href="javascript:void(0)">
+                                        términos y política de privacidad
+                                    </a></span>
+                                </label>
+                            </div> -->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <button (click)="sendData()" class="btn btn-block btn-outline-primary" style="font-size:15px" *ngIf="validar_pago"
+                                    [disabled]="!formRegister.valid">
+                                  Registrar
+                                </button>
+                            </div>
+                        </form>
+                        <!-- <button class="btn btn-block btn-outline-primary" style="font-size:15px" (click)="openModalBinance()">
+                          Modal
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12"></div>
+</div>
+<!-- Modal Validar -->
+<ng-template #add let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title"><b>Validar Voucher Pack</b></h5>
+        <button type="button" class="close" aria-label="Close" (click)="closeModalValidate()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form [formGroup]="formPass" class="modal-body row">
+        <div class="col-sm-12 col-md-12 col-lg-12 mb-2">
+            <small>Banco</small>
+            <div class="form-group">
+                <ng-select formControlName="banco"
+                        [items]="banco"
+                        bindLabel="name"
+                        bindValue="id"
+                        placeholder="SELECCIONAR BANCO*">
+                </ng-select>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 mb-2">
+            <small>N° Operación</small>
+            <div class="form-group">
+                <div class="input-group">
+                    <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                        <i class="fa fa-reorder" aria-hidden="true"></i>
+                    </a>
+                    <input autocomplete="off" class="form-control" type="text" formControlName="operacion" placeholder="" required>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 mb-2">
+            <small>Fecha Pago</small>
+            <div class="form-group">
+                <div class="input-group">
+                    <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </a>
+                    <input autocomplete="off" class="form-control" type="date" formControlName="fecha" required>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 mb-2">
+            <small>Imagen Comprobante Pago</small> 
+            <div class="custom-dropzone" ngx-dropzone [accept]="'image/*'" (change)="onSelect($event)">
+                <ngx-dropzone-label>
+                    Selecciona Nueva Imagen
+                </ngx-dropzone-label>
+                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f"
+                    [removable]="true" (removed)="onRemove(f)">
+                    <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                </ngx-dropzone-image-preview>
+            </div>
+        </div>
+        <button class="col-sm-12 col-md-12 col-lg-12 my-2 btn btn-primary" [disabled]="!formPass.valid" (click)="update()">
+            <i class="fa fa-save"></i> Guardar</button>
+    </form>
+</ng-template>
+<!-- Modal referidos -->
+<ng-template #modal_pago let-modal>
+    <div class="modal-body row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h5>{{text_modal}}</h5>
+            <hr>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <a href="javascript:void(0);" *ngIf="text_modal=='Escanear código QR'">
+                <img placement="top" ngbTooltip="Escanea el QR" src="{{info_qr.img_qr_url}}" alt=""></a>
+                <a href="{{info_qr.img_qr_url}}" target="_blank" *ngIf="text_modal=='Descargar código QR'">
+                    <img placement="top" ngbTooltip="Click para descargar" src="{{info_qr.img_qr_url}}" alt=""></a>
+            <a href="javascript:void(0)" class="text-dark" (click)="copiar()" *ngIf="text_modal=='Link de Referidos'" >
+                <i placement="top" ngbTooltip="Click para copiar" class="fa fa-link" style="font-size: 20vh; color:black"></i>
+                <!-- <img src="https://img.freepik.com/vector-premium/icono-programa-afiliados-referencias-blanco_116137-7006.jpg" alt=""> -->
+            </a>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <hr>
+            <button class="btn btn-danger" (click)="closeModal()"> Cerrar</button>
+        </div>
+    </div>
+</ng-template>
+<!-- SPINNER -->
+<ngx-spinner type="timer"></ngx-spinner>

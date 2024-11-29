@@ -1,0 +1,112 @@
+<div class="page-header">
+    <h1 class="page-title my-auto">Jatun Ayllu</h1>
+    <div>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"> <a href="javascript:void(0)"><i class="fe fe-home"></i></a></li> 
+            <li class="breadcrumb-item"> <a href="javascript:void(0)">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registrados</li>
+        </ol> 
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        ENTREGA PRODUCTOS REFERIDOS
+    </div>
+    <form [formGroup]="formfiltros" class="card-body row">
+        <div class="col-md-12 col-sm-12 col-lg-3 mb-2">
+            <div class="form-group">
+            <small class="form-label"><b>Filtrar Estado</b></small>
+            <ng-select class="text-uppercase"
+                        formControlName="estados"
+                        [items]="estados"
+                        bindLabel="name"
+                        bindValue="id"
+                        placeholder="SELECCIONAR ESTADO"
+                        (change)="selectEstado($event)">
+            </ng-select>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="table-responsive invoice-table" id="table">
+                <ng-template #idTpl let-rowIndex="rowIndex" let-row="row">
+                    {{rowIndex+1}}
+                </ng-template>
+                <ng-template #is_estado let-data="adtData" let-emitter="captureEvents">
+                    <p *ngIf="data.estado">
+                    <span class="badge bg-warning p-1" *ngIf="data.estado.name=='PENDIENTE'">{{data.estado.name}}</span>
+                    </p>
+                    <p *ngIf="!data.estado">
+                    <span class="badge bg-light text-dark p-1">Sin Estado</span>
+                    </p>
+                </ng-template>
+                <ng-template #dtActions let-data="adtData" let-emitter="captureEvents">
+                    <app-buttons-table-productos [actions]="dataTableActions" [data]="data" (emitter)="emitter($event)"></app-buttons-table-productos>
+                </ng-template>
+                <table id="material--template-dt" datatable *ngIf="columns.length" [dtOptions]="dtOptions"
+                    style="width: 100%;" [dtTrigger]="dtTrigger"></table>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Modal IMG -->
+<ng-template #modal_img let-modal>
+    <div class="modal-body row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h5>Imagen Comprobante {{data_detalle.data_referido.nombre}} {{data_detalle.data_referido.apellido}}</h5>
+            <hr>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+           <img src="{{data_detalle.url_comprobante}}" alt="#" style="width: 100%;">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <hr>
+            <button class="btn btn-danger" (click)="closeModalIMG()"> Cerrar</button>
+        </div>
+    </div>
+</ng-template>
+<!-- Modal IMG -->
+<ng-template #modal_estado let-modal>
+    <div class="modal-body row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <h5>CLIENTE: {{data_detalle.data_referido.nombre}} {{data_detalle.data_referido.apellido}} <br><br>
+                PRODUCTOS A RECOGER: {{data_detalle.pack.cantidad_productos}}</h5>
+            <hr>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center" *ngFor="let data of productos">
+            <div class="card" style="border: 1px solid rgb(206, 206, 206) !important;">
+                <div class="row" style="margin:2% 2% 2% 2%">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                        <img src="{{data.url_img}}" alt="" style="width: 35%;">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center d-flex align-items-center" style="border-left: 1px solid rgb(206, 206, 206);">
+                        <h5>{{data.nombre}}</h5>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center d-flex align-items-center" style="border-left: 1px solid rgb(206, 206, 206);">
+                        <input type="number" [id]="data.id" class="form-control" value="0" 
+                            (keyup)="getCantidad($event, data)" (change)="getCantidad($event, data)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <div class="card" style="border: 1px solid rgb(206, 206, 206) !important;">
+                <div class="row" style="margin:2% 2% 2% 2%">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <p>CANTIDAD</p>
+                        <p>{{total_cantidad}}</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center" style="border-left: 1px solid rgb(206, 206, 206);">
+                        <br>
+                        <button class="btn btn-outline-primary" (click)="actEstado()"  [disabled]="!validar_entrega">Entregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <hr>
+            <button class="btn btn-danger" (click)="closeModalEstado()"> Cerrar</button>
+        </div>
+    </div>
+</ng-template>
+<!-- SPINNER -->
+<ngx-spinner type="timer"></ngx-spinner>

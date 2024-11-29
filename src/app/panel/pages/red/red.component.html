@@ -1,0 +1,16 @@
+<div class="page-header">
+  <h1 class="page-title my-auto">Jatun Ayllu</h1>
+  <div>
+      <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"> <a href="/"><i class="fe fe-home"></i></a></li>
+          <li class="breadcrumb-item"> <a href="/">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mi Red</li>
+      </ol>
+  </div>
+</div>
+<div class="card" *ngIf="data!=null">
+  <div class="card-title text-center" style="margin-top: 30px;"><h2>Mi Red</h2></div>
+  <app-d3-org-chart [data]="data"></app-d3-org-chart>
+</div>
+<!-- SPINNER -->
+<ngx-spinner type="timer"></ngx-spinner>
